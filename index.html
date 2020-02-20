@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <title> Checkout RD</title>
+
+</head>
+<body>
+        <header>
+            <nav class="navbar navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Empresa 100% Confiavel</a>
+                <button type="button" class="btn btn-primary">Continuar Comprando</button>
+            </nav>
+        </header>
+       
+
+        <main class="container">
+            <form id="checkout" class="row mt-4">
+                <div class="col-md-4">
+                    <header class="bg-dark text-light p-2">
+                        Dados Pessoais
+                    </header>
+                    <div class="p-2">
+                        <label for="nomeUsuario">Nome completo</label>
+                        <input class="form-control" type="text" id="nomeUsuario" name="nomeUsuario" placeholder="Digite seu nome completo">
+                        
+                    </div>
+                    <div class="p-2">
+                        <label for="cpf">CPF</label>
+                        <input class="form-control" type="text" id="cpf" name="cpf" placeholder="Digite seu CPF">
+                    </div>
+                    <div class="p-2">
+                        <label for="telefone">Telefone</label>
+                        <input class="form-control" type="number" id="telefone" name="telefone" placeholder="Digite Seu Telefone ">
+                    </div>
+                    <div class="p-2">
+                        <label for="email">Email</label>
+                        <input class="form-control" type="email" id="email" name="email" placeholder="Digite Seu Email">
+                    </div>
+                    <div class="p-2">
+                        <label for="senha">Senha</label>
+                        <input class="form-control" type="password" id="password" name="password" placeholder="Digite Sua Senha">
+                    </div>
+                    <div class="p-2">
+                        <label for="comfirme">Comfirme Sua Senha</label>
+                        <input class="form-control" type="password" id="comfirme" name="comfirme" placeholder="Comfirme Sua Senha">
+                    </div>
+                    
+            
+
+                </div>
+                <div class="col-md-4">
+                    <header class="bg-dark text-light p-2">
+                        Entrega
+                    </header>
+                    <div class="p-2">
+                        <label for="cep">CEP</label>
+                        <input class="form-control" type="number" id="cep" name="cep" placeholder="Digite seu CEP">
+                        
+                    </div>
+                    <div class="p-2">
+                        <label for="endereco">Endereço</label>
+                        <input class="form-control" type="text" id="endereco" name="endereco" placeholder="Digite seu Endereço">
+                    </div>
+                    <div class="p-2">
+                        <label for="numero">Numero</label>
+                        <input class="form-control" type="number" id="numero" name="numero" placeholder="Digite Seu Numero ">
+                    </div>
+                    <div class="p-2">
+                        <label for="complemento">Complemento</label>
+                        <input class="form-control" type="text" id="complemento" name="complemento" placeholder="Complemento">
+                    </div>
+                    <div class="p-2">
+                        <label for="bairro">Bairro</label>
+                        <input class="form-control" type="text" id="bairro" name="bairro" placeholder="Bairro">
+                    </div>
+                    <div class="p-2 row">
+                        <div class="col-6">
+                                <label for="cidade">Cidade</label>
+                                <input class="form-control" type="text" id="cidade" name="cidadeUsuario" placeholder="Cidade"> 
+                        </div>
+                                <div class="col-6">
+                                    <label for="estado">Estado</label>
+                                <select class="form-control">
+                                    
+                                    <option value="" disabled> estado</option>
+                                    <option value="SP">SP</option>
+                                    <option value="RJ">RJ</option>
+                                </select>
+                                </div>
+
+                        </div>
+
+                        <div class="p-2 row">
+                            <div class="col-6">
+                            <label for="freteRapido">Frete rapido - R$ 50,00</label>
+                            <input type="radio" name="frete" id="freteRapido">
+                            </div>
+
+                            <div class="col-6">
+                            <label for="freteNormal">Frete Normal - R$ 20,00</label>
+                            <input type="radio" name="frete" id="freteNormal">
+    
+                           </div>
+                        </div>
+                        
+                      
+                    </div>
+
+                    
+                <div class="col-md-4">
+                    <header class="bg-dark text-light p-2">
+                        Pagamento
+                    </header>
+
+                    <div class="d-flex justify-content-center flex-column p-0">
+                        <img src="img/futebol.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">produto</h5>
+                          <p class="card-text">R$ 200,00</p>
+                    
+
+                        </div>
+
+                    <div class="p-2">
+                        <label for="numeroCartao">Numero cartão</label>
+                        <input class="form-control" type="month" id="numeroCartao" name="numeroCartao" placeholder="Digite o numero do cartão">
+                    </div>
+
+                    <div class="p-2 row">
+
+                    <div class="col-6">
+                        <label for="validade">Data De Validade</label>
+                        <input class="form-control" type="month" id="validade" name="validade" placeholder="Validade"> 
+                </div>
+                        <div class="col-6">
+                            <label for="CodigoSeguranca">CVV</label>
+                            <input class="form-control" type="number" id="CodigoSeguranca" name="CodigoSeguranca" placeholder="CVV"> 
+                        
+                        </div>
+
+                </div>
+                
+                <div class="p-2">
+                    <label for="titular">Nome do titular</label>
+                    <input class="form-control" type="text" id="titular" name="titular" placeholder="Nome do titular">
+                </div>
+                <div class="p-2">
+                    <label for="cpfTitular">CPF Do Titular</label>
+                    <input class="form-control" type="text" id="cpfTitular" name="cpfTitular" placeholder="CPF Do Titular">
+                </div>
+                <div class="d-flex justify-content-center "></div>
+                <button class="btn- btn-success" type="submit"> Finalizar Compra</button>
+                
+
+                </div>
+
+                    
+        
+                </div>
+                   
+            </form>
+        </main>
+
+
+</body>
+</html>
